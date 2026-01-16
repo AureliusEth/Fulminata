@@ -1,0 +1,20 @@
+{
+  "name": "fulminata",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000F\u0000u\u0000l\u0000m\u0000i\u0000n\u0000a\u0000t\u0000a\u0000\r\u0000 \u0000",
+  "homepage": "https://github.com/AureliusEth/Fulminata#readme",
+  "bugs": {
+    "url": "https://github.com/AureliusEth/Fulminata/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AureliusEth/Fulminata.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
