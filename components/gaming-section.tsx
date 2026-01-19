@@ -1,0 +1,69 @@
+import { Button } from "@/components/ui/button"
+import { ArrowRight } from "lucide-react"
+
+export function GamingSection() {
+  const features = [
+    {
+      title: "In-Game Asset Tokenization",
+      description:
+        "Enable true player ownership of virtual items, characters, and collectibles with cross-platform interoperability.",
+    },
+    {
+      title: "Provably Fair Betting",
+      description:
+        "Transparent, blockchain-verified betting systems that ensure fairness and instant settlement for operators and players.",
+    },
+    {
+      title: "Tournament Infrastructure",
+      description:
+        "Automated prize distribution through smart contracts with verifiable randomness and compliant payout mechanisms.",
+    },
+    {
+      title: "Regulatory Compliance",
+      description:
+        "Navigate gaming and gambling regulations across jurisdictions with our specialized legal and technical frameworks.",
+    },
+  ]
+
+  return (
+    <section id="gaming" className="py-24">
+      <div className="mx-auto max-w-7xl px-6">
+        {/* Header */}
+        <div className="max-w-3xl mb-16">
+          <span className="text-sm text-primary tracking-wide">Gaming & Entertainment</span>
+          <h2 className="font-serif text-4xl md:text-5xl text-foreground mt-4 mb-6 leading-tight">
+            Transforming Digital Entertainment Through Tokenization.
+          </h2>
+          <p className="text-muted-foreground leading-relaxed">
+            The gaming and gambling industries are being revolutionized by blockchain technology. We help operators and
+            developers build next-generation platforms with true asset ownership, transparent operations, and global
+            reach.
+          </p>
+        </div>
+
+        {/* Feature Grid */}
+        <div className="grid md:grid-cols-2 gap-x-12 gap-y-10">
+          {features.map((feature, index) => (
+            <div key={index} className="flex gap-4">
+              <div className="flex-shrink-0 w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center">
+                <span className="text-sm text-primary font-medium">{String(index + 1).padStart(2, "0")}</span>
+              </div>
+              <div>
+                <h3 className="text-lg font-medium text-foreground mb-2">{feature.title}</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">{feature.description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* CTA */}
+        <div className="mt-12">
+          <Button variant="outline" className="border-border text-foreground hover:bg-secondary bg-transparent">
+            Explore Gaming Solutions
+            <ArrowRight className="ml-2 h-4 w-4" />
+          </Button>
+        </div>
+      </div>
+    </section>
+  )
+}
