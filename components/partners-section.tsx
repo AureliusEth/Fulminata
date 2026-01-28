@@ -2,7 +2,7 @@ import { ConsultationForm } from "@/components/consultation-form"
 
 export function PartnersSection() {
   const partners = [
-    { name: "JPMorgan", logo: "/J_P_Morgan_Logo_NEW.svg", invert: false },
+    { name: "JPMorgan", logo: "/J_P_Morgan_Logo_NEW.svg", invert: true },
     { name: "BlackRock", logo: "/bkackrock.png", invert: true },
     { name: "Citi", logo: "/citibank-4-logo-png-transparent.png", invert: true },
     { name: "Barclays", logo: "/barclays.png", invert: true },
