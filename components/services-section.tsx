@@ -49,15 +49,15 @@ export function ServicesSection() {
           </p>
         </div>
 
-        {/* Service Cards - Grid layout with glass morphism */}
+        {/* Service Cards - Grid layout */}
         <div className="grid md:grid-cols-2 gap-6">
           {services.map((service, index) => (
             <div
               key={index}
-              className="group p-8 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md hover:bg-white/10 hover:border-primary/30 hover:shadow-xl hover:shadow-primary/5 transition-all duration-300"
+              className="group p-8 rounded-lg border border-border bg-card/50 hover:bg-card hover:border-primary/30 transition-all duration-300"
             >
               {/* Icon */}
-              <div className="w-12 h-12 rounded-xl bg-primary/20 backdrop-blur-sm border border-primary/20 flex items-center justify-center mb-6">
+              <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-6">
                 <service.icon className="h-6 w-6 text-primary" />
               </div>
 
@@ -68,7 +68,7 @@ export function ServicesSection() {
               {/* Features */}
               <div className="flex flex-wrap gap-2">
                 {service.features.map((feature, i) => (
-                  <span key={i} className="text-xs px-3 py-1.5 rounded-full bg-white/10 backdrop-blur-sm border border-white/10 text-muted-foreground">
+                  <span key={i} className="text-xs px-3 py-1 rounded-full bg-secondary text-muted-foreground">
                     {feature}
                   </span>
                 ))}

@@ -5,8 +5,8 @@ export function AboutSection() {
     <section id="about" className="py-24">
       <div className="mx-auto max-w-7xl px-6">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
-          {/* Left - Content with glass panel */}
-          <div className="p-8 md:p-10 rounded-3xl bg-white/5 backdrop-blur-md border border-white/10">
+          {/* Left - Content */}
+          <div>
             <span className="text-sm text-primary tracking-wide">About Fulminata</span>
             <h2 className="font-serif text-4xl md:text-5xl text-foreground mt-4 mb-8 leading-tight">
               Where Lightning Strikes Twice.

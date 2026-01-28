@@ -51,7 +51,7 @@ export function CaseStudiesSection() {
           {caseStudies.map((study, index) => (
             <div
               key={index}
-              className="group grid md:grid-cols-2 gap-8 p-8 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md hover:bg-white/10 hover:border-primary/20 hover:shadow-xl hover:shadow-primary/5 transition-all duration-300"
+              className="group grid md:grid-cols-2 gap-8 p-8 rounded-lg border border-border bg-card/30 hover:bg-card/50 transition-colors"
             >
               {/* Content */}
               <div className="flex flex-col justify-center">
@@ -61,10 +61,10 @@ export function CaseStudiesSection() {
                 </h3>
                 <p className="text-muted-foreground leading-relaxed mb-6">{study.description}</p>
 
-                {/* Metrics with glass effect */}
-                <div className="flex gap-6">
+                {/* Metrics */}
+                <div className="flex gap-8">
                   {study.metrics.map((metric, i) => (
-                    <div key={i} className="px-4 py-3 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
+                    <div key={i}>
                       <div className="text-2xl font-light text-foreground">{metric.value}</div>
                       <div className="text-xs text-muted-foreground mt-1">{metric.label}</div>
                     </div>
@@ -72,14 +72,13 @@ export function CaseStudiesSection() {
                 </div>
               </div>
 
-              {/* Image with glass overlay */}
-              <div className="aspect-[3/2] rounded-xl overflow-hidden bg-secondary relative">
+              {/* Image */}
+              <div className="aspect-[3/2] rounded-lg overflow-hidden bg-secondary">
                 <img
                   src={study.image || "/placeholder.svg"}
                   alt={study.title}
                   className="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-background/50 to-transparent" />
               </div>
             </div>
           ))}

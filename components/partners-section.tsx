@@ -28,11 +28,11 @@ export function PartnersSection() {
         </div>
 
         {/* Partner Logos */}
-        <div className="flex flex-wrap justify-center gap-4">
+        <div className="flex flex-wrap justify-center gap-6">
           {partners.map((partner, index) => (
             <div
               key={index}
-              className="w-28 h-28 md:w-32 md:h-32 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 flex items-center justify-center p-5 hover:border-primary/50 hover:bg-white/10 hover:shadow-lg hover:shadow-primary/5 transition-all duration-300"
+              className="w-28 h-28 md:w-32 md:h-32 rounded-lg bg-background border border-border flex items-center justify-center p-5 hover:border-primary hover:shadow-md transition-all"
               title={partner.name}
             >
               <img
