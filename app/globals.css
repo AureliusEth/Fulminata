@@ -126,3 +126,71 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Lightning bolt breathing glow animations */
+@keyframes glowPulseOuter {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.2;
+  }
+  50% {
+    transform: scale(0.3);
+    opacity: 0.05;
+  }
+}
+
+@keyframes glowPulseMiddle {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.3;
+  }
+  50% {
+    transform: scale(0.25);
+    opacity: 0.08;
+  }
+}
+
+@keyframes glowPulseInner {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.35;
+  }
+  50% {
+    transform: scale(0.2);
+    opacity: 0.1;
+  }
+}
+
+/* Solana logo breathing glow animations */
+@keyframes solanaGlowPulseOuter {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.35;
+  }
+  50% {
+    transform: scale(0.4);
+    opacity: 0.1;
+  }
+}
+
+@keyframes solanaGlowPulseMiddle {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.4;
+  }
+  50% {
+    transform: scale(0.35);
+    opacity: 0.12;
+  }
+}
+
+@keyframes solanaGlowPulseInner {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.45;
+  }
+  50% {
+    transform: scale(0.3);
+    opacity: 0.15;
+  }
+}

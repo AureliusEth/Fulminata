@@ -3,39 +3,7 @@
 export function AnimatedLightning() {
   return (
     <div className="relative w-full h-full flex items-center justify-center">
-      <style jsx>{`
-        @keyframes glowPulseOuter {
-          0%, 100% {
-            transform: scale(1);
-            opacity: 0.2;
-          }
-          50% {
-            transform: scale(0.3);
-            opacity: 0.05;
-          }
-        }
-        @keyframes glowPulseMiddle {
-          0%, 100% {
-            transform: scale(1);
-            opacity: 0.3;
-          }
-          50% {
-            transform: scale(0.25);
-            opacity: 0.08;
-          }
-        }
-        @keyframes glowPulseInner {
-          0%, 100% {
-            transform: scale(1);
-            opacity: 0.35;
-          }
-          50% {
-            transform: scale(0.2);
-            opacity: 0.1;
-          }
-        }
-      `}</style>
-
+      {/* Outer glow layer */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
         <div
           className="w-[500px] h-[500px]"
@@ -45,6 +13,7 @@ export function AnimatedLightning() {
           }}
         />
       </div>
+      {/* Middle glow layer */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
         <div
           className="w-[350px] h-[350px]"
@@ -55,6 +24,7 @@ export function AnimatedLightning() {
           }}
         />
       </div>
+      {/* Inner glow layer */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
         <div
           className="w-[200px] h-[200px]"

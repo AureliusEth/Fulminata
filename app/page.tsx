@@ -6,6 +6,7 @@ import { InstitutionalSection } from "@/components/institutional-section"
 import { CaseStudiesSection } from "@/components/case-studies-section"
 import { LeadershipSection } from "@/components/leadership-section"
 import { GamingSection } from "@/components/gaming-section"
+import { SolanaSection } from "@/components/solana-section"
 import { PartnersSection } from "@/components/partners-section"
 import { CTASection } from "@/components/cta-section"
 import { Footer } from "@/components/footer"
@@ -21,6 +22,7 @@ export default function Home() {
       <CaseStudiesSection />
       <LeadershipSection />
       <GamingSection />
+      <SolanaSection />
       <PartnersSection />
       <CTASection />
       <Footer />
