@@ -2,13 +2,13 @@ import { ConsultationForm } from "@/components/consultation-form"
 
 export function PartnersSection() {
   const partners = [
-    { name: "JPMorgan", logo: "/JP_Morgan_logo.png" },
-    { name: "BlackRock", logo: "/bkackrock.png" },
-    { name: "Citi", logo: "/citibank-4-logo-png-transparent.png" },
-    { name: "Goldman Sachs", logo: "/goldman-sachs-logo-png-transparent.png" },
-    { name: "Barclays", logo: "/barclays.png" },
-    { name: "Fidelity", logo: "/Fidelity Investments.svg" },
-    { name: "Solana", logo: "/solana-sol-logo.svg" },
+    { name: "JPMorgan", logo: "/JP_Morgan_logo.png", invert: false },
+    { name: "BlackRock", logo: "/bkackrock.png", invert: true },
+    { name: "Citi", logo: "/citibank-4-logo-png-transparent.png", invert: true },
+    { name: "Goldman Sachs", logo: "/goldman-sachs-logo-png-transparent.png", invert: false },
+    { name: "Barclays", logo: "/barclays.png", invert: true },
+    { name: "Fidelity", logo: "/Fidelity Investments.svg", invert: true },
+    { name: "Solana", logo: "/solana-sol-logo.svg", invert: false },
   ]
 
   return (
@@ -38,7 +38,7 @@ export function PartnersSection() {
               <img
                 src={partner.logo}
                 alt={partner.name}
-                className="w-full h-full object-contain brightness-0 invert opacity-80 hover:opacity-100 transition-opacity"
+                className={`w-full h-full object-contain opacity-80 hover:opacity-100 transition-opacity ${partner.invert ? 'brightness-0 invert' : ''}`}
               />
             </div>
           ))}
