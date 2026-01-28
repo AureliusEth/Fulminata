@@ -40,11 +40,11 @@ export function GamingSection() {
           </p>
         </div>
 
-        {/* Feature Grid */}
-        <div className="grid md:grid-cols-2 gap-x-12 gap-y-10">
+        {/* Feature Grid with glass cards */}
+        <div className="grid md:grid-cols-2 gap-6">
           {features.map((feature, index) => (
-            <div key={index} className="flex gap-4">
-              <div className="flex-shrink-0 w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center">
+            <div key={index} className="flex gap-4 p-6 rounded-2xl bg-white/5 backdrop-blur-md border border-white/10 hover:bg-white/10 hover:border-primary/20 transition-all duration-300">
+              <div className="flex-shrink-0 w-10 h-10 rounded-xl bg-primary/20 backdrop-blur-sm border border-primary/20 flex items-center justify-center">
                 <span className="text-sm text-primary font-medium">{String(index + 1).padStart(2, "0")}</span>
               </div>
               <div>
