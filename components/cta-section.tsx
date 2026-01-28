@@ -1,6 +1,4 @@
-import { Button } from "@/components/ui/button"
 import { ConsultationForm } from "@/components/consultation-form"
-import { ArrowRight } from "lucide-react"
 
 export function CTASection() {
   return (
@@ -15,11 +13,8 @@ export function CTASection() {
           is ready to guide your transformation.
         </p>
 
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <div className="flex items-center justify-center">
           <ConsultationForm />
-          <Button variant="ghost" className="text-muted-foreground hover:text-foreground">
-            View Case Studies
-          </Button>
         </div>
 
         {/* Info Row */}

@@ -1,5 +1,5 @@
-import { Button } from "@/components/ui/button"
-import { ArrowRight, FileCode, Shield, Workflow, Coins } from "lucide-react"
+import { FileCode, Shield, Workflow, Coins } from "lucide-react"
+import { ConsultationForm } from "@/components/consultation-form"
 
 export function ServicesSection() {
   const services = [
@@ -79,10 +79,10 @@ export function ServicesSection() {
 
         {/* CTA */}
         <div className="text-center mt-12">
-          <Button variant="outline" className="border-border text-foreground hover:bg-secondary bg-transparent">
-            Explore All Services
-            <ArrowRight className="ml-2 h-4 w-4" />
-          </Button>
+          <ConsultationForm 
+            buttonText="Discuss Your Project"
+            buttonClassName="border-border text-foreground hover:bg-secondary bg-transparent border px-6 py-3 rounded-md cursor-pointer"
+          />
         </div>
       </div>
     </section>

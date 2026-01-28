@@ -1,5 +1,4 @@
-import { Button } from "@/components/ui/button"
-import { ArrowRight } from "lucide-react"
+import { ConsultationForm } from "@/components/consultation-form"
 
 export function GamingSection() {
   const features = [
@@ -58,10 +57,10 @@ export function GamingSection() {
 
         {/* CTA */}
         <div className="mt-12">
-          <Button variant="outline" className="border-border text-foreground hover:bg-secondary bg-transparent">
-            Explore Gaming Solutions
-            <ArrowRight className="ml-2 h-4 w-4" />
-          </Button>
+          <ConsultationForm 
+            buttonText="Explore Gaming Solutions"
+            buttonClassName="border-border text-foreground hover:bg-secondary bg-transparent border px-6 py-3 rounded-md cursor-pointer"
+          />
         </div>
       </div>
     </section>

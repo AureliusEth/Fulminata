@@ -1,35 +1,14 @@
-import { Button } from "@/components/ui/button"
-import { ArrowRight } from "lucide-react"
-
-const partnerLogos: Record<string, string> = {
-  Solana: "/images/partners/solana.svg",
-  Ethereum: "/images/partners/ethereum.svg",
-  Fireblocks: "/images/partners/fireblocks.svg",
-  Circle: "/images/partners/circle.svg",
-  JPMorgan: "/images/partners/jpmorgan.svg",
-  BlackRock: "/images/partners/blackrock.svg",
-  Citi: "/images/partners/citi.svg",
-  HSBC: "/images/partners/hsbc.svg",
-  BNYMellon: "/images/partners/bnymellon.svg",
-  StateStreet: "/images/partners/statestreet.svg",
-  Fidelity: "/images/partners/fidelity.svg",
-  SWIFT: "/images/partners/swift.svg",
-}
+import { ConsultationForm } from "@/components/consultation-form"
 
 export function PartnersSection() {
   const partners = [
-    { name: "JPMorgan", logo: partnerLogos["JPMorgan"] },
-    { name: "BlackRock", logo: partnerLogos["BlackRock"] },
-    { name: "Citi", logo: partnerLogos["Citi"] },
-    { name: "HSBC", logo: partnerLogos["HSBC"] },
-    { name: "BNY Mellon", logo: partnerLogos["BNYMellon"] },
-    { name: "State Street", logo: partnerLogos["StateStreet"] },
-    { name: "Fidelity", logo: partnerLogos["Fidelity"] },
-    { name: "SWIFT", logo: partnerLogos["SWIFT"] },
-    { name: "Solana", logo: partnerLogos["Solana"] },
-    { name: "Ethereum", logo: partnerLogos["Ethereum"] },
-    { name: "Fireblocks", logo: partnerLogos["Fireblocks"] },
-    { name: "Circle", logo: partnerLogos["Circle"] },
+    { name: "JPMorgan", logo: "/JP_Morgan_logo.png" },
+    { name: "BlackRock", logo: "/bkackrock.png" },
+    { name: "Citi", logo: "/citibank-4-logo-png-transparent.png" },
+    { name: "Goldman Sachs", logo: "/goldman-sachs-logo-png-transparent.png" },
+    { name: "Barclays", logo: "/barclays.png" },
+    { name: "Fidelity", logo: "/Fidelity Investments.svg" },
+    { name: "Solana", logo: "/solana-sol-logo.svg" },
   ]
 
   return (
@@ -67,10 +46,10 @@ export function PartnersSection() {
 
         {/* CTA */}
         <div className="mt-12 text-center">
-          <Button variant="outline" className="border-border text-foreground hover:bg-secondary bg-transparent">
-            Explore Ecosystem
-            <ArrowRight className="ml-2 h-4 w-4" />
-          </Button>
+          <ConsultationForm 
+            buttonText="Join Our Ecosystem"
+            buttonClassName="border-border text-foreground hover:bg-secondary bg-transparent border px-6 py-3 rounded-md cursor-pointer"
+          />
         </div>
       </div>
     </section>

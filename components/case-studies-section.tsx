@@ -1,6 +1,3 @@
-import { Button } from "@/components/ui/button"
-import { ArrowRight } from "lucide-react"
-
 export function CaseStudiesSection() {
   const caseStudies = [
     {
@@ -42,15 +39,11 @@ export function CaseStudiesSection() {
     <section id="case-studies" className="py-24">
       <div className="mx-auto max-w-7xl px-6">
         {/* Section Header */}
-        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-16">
+        <div className="mb-16">
           <div className="max-w-2xl">
             <span className="text-sm text-primary tracking-wide">Case Studies</span>
             <h2 className="font-serif text-4xl md:text-5xl text-foreground mt-4">Proven Track Record.</h2>
           </div>
-          <Button variant="ghost" className="text-muted-foreground hover:text-foreground self-start md:self-auto">
-            View All Projects
-            <ArrowRight className="ml-2 h-4 w-4" />
-          </Button>
         </div>
 
         {/* Case Study Cards */}

@@ -1,5 +1,3 @@
-import { Button } from "@/components/ui/button"
-import { ArrowRight } from "lucide-react"
 import { ConsultationForm } from "@/components/consultation-form"
 
 export function HeroSection() {
@@ -43,12 +41,6 @@ export function HeroSection() {
                 buttonText="Schedule Consultation"
                 buttonClassName="bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-6 text-base cursor-pointer"
               />
-              <Button
-                variant="outline"
-                className="border-border text-foreground hover:bg-secondary bg-transparent px-8 py-6 text-base"
-              >
-                View Case Studies
-              </Button>
             </div>
           </div>
 

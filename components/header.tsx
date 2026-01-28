@@ -2,8 +2,8 @@
 
 import { useState } from "react"
 import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { Menu, X, ChevronDown } from "lucide-react"
+import { Menu, X } from "lucide-react"
+import { ConsultationForm } from "@/components/consultation-form"
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -20,14 +20,24 @@ export function Header() {
           </Link>
 
           <nav className="hidden md:flex items-center gap-1">
-            <button className="flex items-center gap-1 px-4 py-2 text-sm text-muted-foreground hover:text-foreground transition-colors">
-              Solutions
-              <ChevronDown className="h-4 w-4" />
-            </button>
-            <button className="flex items-center gap-1 px-4 py-2 text-sm text-muted-foreground hover:text-foreground transition-colors">
+            <Link
+              href="#services"
+              className="px-4 py-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
+            >
               Services
-              <ChevronDown className="h-4 w-4" />
-            </button>
+            </Link>
+            <Link
+              href="#about"
+              className="px-4 py-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
+            >
+              About
+            </Link>
+            <Link
+              href="#solana"
+              className="px-4 py-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
+            >
+              Solana
+            </Link>
             <Link
               href="#ecosystem"
               className="px-4 py-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
@@ -35,28 +45,18 @@ export function Header() {
               Ecosystem
             </Link>
             <Link
-              href="#insights"
+              href="#leadership"
               className="px-4 py-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
             >
-              Insights
+              Leadership
             </Link>
-            <button className="flex items-center gap-1 px-4 py-2 text-sm text-muted-foreground hover:text-foreground transition-colors">
-              About
-              <ChevronDown className="h-4 w-4" />
-            </button>
           </nav>
 
           <div className="hidden md:flex items-center gap-3">
-            <Button
-              variant="outline"
-              size="sm"
-              className="border-border text-foreground hover:bg-secondary bg-transparent"
-            >
-              Sign Up
-            </Button>
-            <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-foreground">
-              Log In
-            </Button>
+            <ConsultationForm 
+              buttonText="Get in Touch"
+              buttonClassName="bg-primary text-primary-foreground hover:bg-primary/90 px-4 py-2 text-sm cursor-pointer"
+            />
           </div>
 
           <button
@@ -71,36 +71,45 @@ export function Header() {
         {mobileMenuOpen && (
           <nav className="md:hidden py-4 border-t border-border/50 flex flex-col gap-2">
             <Link
-              href="#solutions"
-              className="py-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
-            >
-              Solutions
-            </Link>
-            <Link
               href="#services"
               className="py-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
+              onClick={() => setMobileMenuOpen(false)}
             >
               Services
             </Link>
             <Link
+              href="#about"
+              className="py-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              About
+            </Link>
+            <Link
+              href="#solana"
+              className="py-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Solana
+            </Link>
+            <Link
               href="#ecosystem"
               className="py-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
+              onClick={() => setMobileMenuOpen(false)}
             >
               Ecosystem
             </Link>
             <Link
-              href="#insights"
+              href="#leadership"
               className="py-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
+              onClick={() => setMobileMenuOpen(false)}
             >
-              Insights
+              Leadership
             </Link>
-            <div className="flex gap-2 pt-2">
-              <Button variant="outline" size="sm" className="flex-1 border-border text-foreground bg-transparent">
-                Sign Up
-              </Button>
-              <Button variant="ghost" size="sm" className="flex-1 text-muted-foreground">
-                Log In
-              </Button>
+            <div className="pt-2">
+              <ConsultationForm 
+                buttonText="Get in Touch"
+                buttonClassName="w-full bg-primary text-primary-foreground hover:bg-primary/90 px-4 py-2 text-sm cursor-pointer"
+              />
             </div>
           </nav>
         )}

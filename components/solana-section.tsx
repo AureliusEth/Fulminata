@@ -1,6 +1,5 @@
-import { Button } from "@/components/ui/button"
-import { ArrowRight } from "lucide-react"
 import { AnimatedSolanaLogo } from "./animated-solana-logo"
+import { ConsultationForm } from "@/components/consultation-form"
 
 export function SolanaSection() {
   const features = [
@@ -37,10 +36,10 @@ export function SolanaSection() {
               Opening the Gates to Solana.
             </h2>
             <p className="text-muted-foreground leading-relaxed">
-              Through our strategic partnership with KEEL—Solana's Capital Engine—Fulminata is helping institutions 
-              and enterprises access the full potential of the Solana blockchain. We combine deep ecosystem knowledge, 
-              technical excellence, and proven tokenization expertise to accelerate your entry into DeFi and tokenized 
-              asset markets on one of the world's fastest-growing networks.
+              Through our strategic partnership with KEEL—Solana's Capital Engine and the Solana Foundation Fulminata 
+              is helping institutions and enterprises access the full potential of the Solana blockchain. We combine 
+              deep ecosystem knowledge, technical excellence, and proven tokenization expertise to accelerate your 
+              entry into both DeFi and Institutional tokenized asset markets on one of the world's fastest-growing networks.
             </p>
           </div>
           <div className="flex-shrink-0 flex items-center justify-center md:pt-8">
@@ -65,10 +64,10 @@ export function SolanaSection() {
 
         {/* CTA */}
         <div className="mt-12">
-          <Button variant="outline" className="border-border text-foreground hover:bg-secondary bg-transparent">
-            Explore Solana Solutions
-            <ArrowRight className="ml-2 h-4 w-4" />
-          </Button>
+          <ConsultationForm 
+            buttonText="Explore Solana Solutions"
+            buttonClassName="border-border text-foreground hover:bg-secondary bg-transparent border px-6 py-3 rounded-md cursor-pointer"
+          />
         </div>
       </div>
     </section>
