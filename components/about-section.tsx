@@ -7,36 +7,27 @@ export function AboutSection() {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left - Content */}
           <div>
-            <span className="text-sm text-primary tracking-wide">About Fulminata</span>
+            <span className="text-sm text-primary tracking-wide">Advisory Experience</span>
             <h2 className="font-serif text-4xl md:text-5xl text-foreground mt-4 mb-8 leading-tight">
-              Where Lightning Strikes Twice.
+              Advisory Experience in Tokenisation & Capital Markets
             </h2>
 
             <div className="space-y-6 text-muted-foreground leading-relaxed">
               <p>
-                Fulminata—Latin for "armed with lightning"—represents our approach to institutional blockchain adoption:
-                swift, powerful, and transformative. We are a specialized Web3 consultancy founded by veterans of the
-                world's leading financial institutions.
+                Fulminata provides senior advisory services to asset managers, financial institutions, market
+                infrastructure providers, and Web3-native platforms navigating the institutional adoption of
+                tokenisation and digital capital markets.
               </p>
 
               <p>
-                Our founding team led tokenization initiatives at Fidelity International, architecting the technical
-                infrastructure that enabled the deployment of digitally native fund tokens using institutional-grade
-                standards like ERC3643. We've collaborated with HSBC Orion, JPMorgan Onyx, and CitiBank on
-                groundbreaking projects that bridge traditional finance with decentralized infrastructure.
+                Led by Steve Whyman, Fulminata operates at the intersection of traditional capital markets, regulatory
+                frameworks, and blockchain-based financial infrastructure—supporting clients as they design, issue,
+                distribute, and scale tokenised financial products in a compliant, commercially viable way.
               </p>
 
               <p>
-                With backgrounds spanning Debt Capital Markets leadership at Fidelity and EM Fixed Income trading at
-                BlackRock, we bring a rare combination of deep capital markets expertise and hands-on blockchain
-                engineering. This dual perspective allows us to design solutions that satisfy both the technical
-                requirements of Web3 and the rigorous compliance standards of institutional finance.
-              </p>
-
-              <p>
-                Today, Fulminata partners with asset managers, investment banks, and financial institutions seeking to
-                tokenize real-world assets, deploy compliant digital securities, and build the infrastructure for the
-                next generation of financial markets.
+                Our work spans fund and security tokenisation, collateral mobility, liquidity architecture, ecosystem
+                integration, and institutional distribution into Web3 environments.
               </p>
             </div>
           </div>

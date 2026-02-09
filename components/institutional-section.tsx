@@ -1,26 +1,25 @@
 import { ConsultationForm } from "@/components/consultation-form"
 
 export function InstitutionalSection() {
-  const solutions = [
+  const engagementPoints = [
     {
-      title: "Asset Management",
       description:
-        "Transform traditional portfolios into tokenized instruments with enhanced liquidity, transparency, and 24/7 settlement capabilities. Our team has direct experience tokenizing $7B+ in assets at Fidelity International.",
+        "Design tokenised funds, securities, and collateral frameworks aligned with institutional and regulatory standards",
     },
     {
-      title: "Investment Banking",
       description:
-        "Streamline capital markets operations through blockchain-based issuance, settlement, and custody infrastructure. Leverage our Debt Capital Markets and Fixed Income trading experience from Fidelity and BlackRock.",
+        "Navigate platform selection, ecosystem integration, and go-to-market strategy for tokenised products",
     },
     {
-      title: "Institutional Onboarding",
-      description:
-        "Comprehensive guidance for financial institutions entering Web3 with compliant, enterprise-grade solutions. From technical due diligence to production deployment, we've built the playbook at Tier 1 institutions.",
+      description: "Translate regulatory expectations and market structure into workable on-chain architectures",
     },
     {
-      title: "Regulatory Architecture",
       description:
-        "Navigate the complex regulatory landscape with battle-tested compliance frameworks. We've implemented ERC3643 security tokens, ONCHAINID identity solutions, and jurisdiction-specific compliance modules.",
+        "Connect traditional asset managers with Web3-native distribution, liquidity, and service providers",
+    },
+    {
+      description:
+        "Support industry initiatives, consortiums, and white-paper development shaping the future of capital markets",
     },
   ]
 
@@ -28,55 +27,31 @@ export function InstitutionalSection() {
     <section id="institutional" className="py-24 bg-card/30">
       <div className="mx-auto max-w-7xl px-6">
         <div className="grid lg:grid-cols-2 gap-16">
-          {/* Left Column - Text */}
           <div>
-            <span className="text-sm text-primary tracking-wide">For Institutions</span>
+            <span className="text-sm text-primary tracking-wide">Client Engagement</span>
             <h2 className="font-serif text-4xl md:text-5xl text-foreground mt-4 mb-6 leading-tight">
-              Enterprise-Grade Infrastructure for Digital Assets.
+              How Clients Engage Fulminata
             </h2>
             <p className="text-muted-foreground mb-6 leading-relaxed">
-              We specialize in bridging traditional finance with decentralized infrastructure. Our battle-tested
-              frameworks ensure regulatory compliance, institutional security, and operational scalability for the
-              world's leading financial organizations.
+              Clients work with Fulminata to:
             </p>
             <p className="text-muted-foreground mb-10 leading-relaxed">
-              Having led tokenization projects at Fidelity International in collaboration with HSBC Orion, JPMorgan
-              Onyx, and CitiBank, we understand the unique requirements of institutional adoption. From smart contract
-              architecture to KYC/AML integration, we deliver solutions that meet the highest standards of enterprise
-              finance.
+              Fulminata acts as an independent, senior advisor—helping institutions adopt tokenisation not as a pilot,
+              but as durable financial infrastructure.
             </p>
 
             <ConsultationForm />
           </div>
 
-          {/* Right Column - Solutions List */}
           <div className="space-y-8">
-            {solutions.map((solution, index) => (
+            {engagementPoints.map((point, index) => (
               <div key={index} className="pb-8 border-b border-border last:border-0 last:pb-0">
-                <h3 className="text-xl font-medium text-foreground mb-3">{solution.title}</h3>
-                <p className="text-muted-foreground leading-relaxed">{solution.description}</p>
+                <p className="text-muted-foreground leading-relaxed flex items-start gap-3">
+                  <span className="text-primary mt-1.5">•</span>
+                  <span>{point.description}</span>
+                </p>
               </div>
             ))}
-          </div>
-        </div>
-
-        {/* Stats Row - Updated with real credentials */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-20 pt-12 border-t border-border">
-          <div>
-            <div className="text-3xl md:text-4xl font-light text-foreground">$7B+</div>
-            <div className="text-sm text-muted-foreground mt-1">Assets Tokenized</div>
-          </div>
-          <div>
-            <div className="text-3xl md:text-4xl font-light text-foreground">Tier 1</div>
-            <div className="text-sm text-muted-foreground mt-1">Institution Pedigree</div>
-          </div>
-          <div>
-            <div className="text-3xl md:text-4xl font-light text-foreground">5+</div>
-            <div className="text-sm text-muted-foreground mt-1">Enterprise Deployments</div>
-          </div>
-          <div>
-            <div className="text-3xl md:text-4xl font-light text-foreground">ERC3643</div>
-            <div className="text-sm text-muted-foreground mt-1">Compliant Standard</div>
           </div>
         </div>
       </div>
